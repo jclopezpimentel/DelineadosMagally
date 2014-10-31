@@ -1,0 +1,148 @@
+/*primer menu*/
+*{
+	margin:0px;
+	padding:0px;
+	font-family: Helvetica Neue;     
+}
+  
+  header{
+	margin:10px auto;
+	width:1200px;
+	height:45px;
+	background-color: red;
+    
+}
+
+BODY{ 
+}
+
+ 
+/*Contenido de la administracion*/
+#contenidoAdm{ 
+       position:absolute;
+       left: 6%;
+       top: 61%;
+       width:66%;
+	   height:54%;
+       z-index: 1;
+    
+    
+} 
+
+/*Menu de administracion*/
+p.textoAdm{
+	font-size: 1.5em;
+	color:white;
+	text-align: center;
+	padding-top:10px;
+}
+
+div.contenedorAdm{
+	width: 300px;
+	height: 45px;
+	float:left;
+}
+
+div#opcion1{
+	background-color:#ADADAD;
+}
+div#opcion3{
+	background-color:#ADADAD;
+}
+div#opcion2{
+	background-color:#7D6D6D;
+}
+div#opcion4{
+	background-color:#7D6D6D;
+}
+
+#administracion{
+background:#FFF9F9; 
+}
+/*contenido dentro del historial*/
+#texto{
+    font-size: 20px;
+}
+
+#tabla{
+    border:2px solid black;
+}
+/*contenido de md4*/
+#calendario{
+  position:absolute; 
+  width:405px; 
+  height:400px;  
+}
+
+#cita{
+   position:absolute;
+   left: 430px; 
+   width:450px; 
+   height:400px;
+}
+    
+#agendar{
+   padding-bottom: 40px;
+   position:absolute;
+   left: 470px; 
+   width:680px; 
+   /*height:370px;*/
+   height:auto;
+   border: 2px solid #FFB1B1;
+}
+#cancelar{   
+   padding: 20px;
+   position:absolute;
+   top: 390px;
+   width:410px; 
+   height:370px;
+   border: 2px solid #FFB1B1;
+}
+
+/*contenido MD10*/
+
+#citasClientes{
+    background-color:#656577;
+    padding: 20px;
+    position:absolute;
+    top:100px;
+    left: 470px; 
+    width:250px; 
+    height:270px;
+    border: 2px solid #FFB1B1;
+}
+
+#textbox
+  {
+ 
+ position:absolute;top:400px;left:550px;
+
+  border: 1px solid #DBE1EB;
+  font-size: 18px;
+  font-family: Arial, Verdana;
+  padding-left: 7px;
+  padding-right: 7px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -o-border-radius: 4px;
+  background: #FFFFFF;
+  background: linear-gradient(left, #FFFFFF, #F7F9FA);
+  background: -moz-linear-gradient(left, #FFFFFF, #F7F9FA);
+  background: -webkit-linear-gradient(left, #FFFFFF, #F7F9FA);
+  background: -o-linear-gradient(left, #FFFFFF, #F7F9FA);
+  color: #2E3133;
+  }
+  
+  .textbox:focus
+  {
+  color: #2E3133;
+  border-color: #FBFFAD;
+  }
+
+
+p.texto{
+    font-size: 20px;
+}

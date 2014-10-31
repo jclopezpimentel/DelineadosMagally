@@ -1,0 +1,73 @@
+
+
+     .producto{
+	width: 20%;
+	height:  20%;
+	background-color: #fafafa;
+	border:1px solid gray;
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 1%;
+	margin-top: 1%;
+  
+}
+    
+.producto img{
+	width: 40px;
+	height: 50px;
+	margin: 20px auto;
+}
+
+  .productoestado{
+	width: 40%;
+	height: auto;
+	background-color: #fafafa;
+	border:1px solid gray;
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 1%;
+	margin-top: 1%;
+}
+    
+.productoestado img{
+	width: 80%;
+	height: 15%;
+	margin: 20px auto;
+}
+
+
+#ordenando{
+
+       position:absolute;
+       left: 10%;
+       top: 110%;
+       width:80%;
+	     height:50%;
+       
+
+
+}
+
+#galeria {
+       position:relative;
+       left: 28%;
+       top: 40px;
+       width:66%;
+	   height:54%;
+       z-index: 1;
+    
+	}
+    
+    #calendario{
+  position:absolute; 
+    width:405px; 
+    height:400px;
+    
+}
+
+#cita{
+   position:absolute;
+   left: 430px; 
+    width:450px; 
+    height:400px;
+   }

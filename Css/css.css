@@ -1,0 +1,146 @@
+/*primer menu*/
+
+
+    
+*{
+	margin:0px;
+	padding:0px;
+	font-family: Helvetica Neue;     
+}
+  
+
+#contenido {  
+       position:relative;
+       left: 7%;
+       top: 0%;
+       width:70%;
+        height:auto; 
+        padding-bottom: 50px;
+        
+	}
+  #contenido2{
+	
+       position:absolute;
+       left: 0%;
+       top: 0%;
+       width:100%;
+	   height:auto;  
+       padding-bottom:70px;
+    
+	}
+
+BODY{
+}
+
+ 
+/*Contenido de la administracion*/
+#contenidoAdm{ 
+       position:absolute;
+       left: 6%;
+       top: 6%;
+       width:66%;
+	   height:54%;
+       z-index: 1;
+    
+    
+} 
+
+/*Menu de administracion*/
+p.textoAdm{
+	font-size: 1.5em;
+	color:white;
+	text-align: center;
+	padding-top:10px;
+}
+
+div.contenedorAdm{
+	width: 300px;
+	height: 45px;
+	float:left;
+}
+
+div#opcion1{
+	background-color:#ADADAD;
+}
+div#opcion3{
+	background-color:#ADADAD;
+}
+div#opcion2{
+	background-color:#7D6D6D;
+}
+div#opcion4{
+	background-color:#7D6D6D;
+}
+
+#administracion{
+background:#FFF9F9; 
+}
+/*contenido dentro del historial*/
+
+#tabla{
+    border:2px solid black;
+}
+/*contenido de md4*/
+
+
+
+
+/*contenido MD10*/
+
+.letras{
+    font-size: 20px;
+}
+
+#citasClientes{
+
+    padding: 20px;
+    position:relative;
+    top: 20%;
+    left: 470px; 
+    width:250px; 
+    height:270px;
+    border: 2px solid #FFB1B1;
+    
+}
+
+
+
+    
+#agendar{
+    top:1000px;
+    background-color: #656577;
+    padding: 20px;
+   position:absolute;
+   left: 470px; 
+    width:680px; 
+    height:370px;
+   border: 2px solid #FFB1B1;
+}
+#cancelar{    padding: 20px;
+   position:absolute;
+   top: 390px;
+   width:410px; 
+   height:370px;
+   border: 2px solid #FFB1B1;
+   
+}
+
+#content {
+       position:relative;
+       left: 33%;
+       top: 0%;
+       width:60%;
+	     height:auto; 
+       z-index: 1;
+    
+	}
+  #content2 {
+	
+       position:absolute;
+       left: 0%;
+       top: 0%;
+       width:100%;
+	   height:auto;  
+       z-index: 1;
+    
+	}

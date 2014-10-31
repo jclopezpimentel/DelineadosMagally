@@ -1,0 +1,91 @@
+         
+                 <!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /> 
+	<title>Delineados Magally</title>
+	<link rel="stylesheet" href="Css/styleIndex.css"> 
+  
+  <link rel="stylesheet" href="Css/estilos.css"> 
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial scale=1.0, maximum scale=1.0, minimum scale=1.0">       
+	<script type="text/javascript" src="engine1/jquery.js"></script>
+   
+</head>
+<body>
+
+<header> 
+	<div class="caja">
+   		<center>
+       		<img src="Images/logo.png" style="width:70%; height:70%"  > 
+	    </center>
+    	<?php
+			include "plantilla-superior-cliente.php";
+		?>  
+	</div>
+</header>
+<main>    
+	<div class="late">
+		<?php
+			//include "menu-lateral.php";
+		?>  
+     </div>
+      <br> <br> <br> <br> 
+      <div class="galeriaa">
+      	<div id="galeria">
+    		<div id="wowslider-container1">
+				<div class="ws_images"><ul>   
+				    <?php
+						include 'conexion.php';
+						$re=mysql_query("select * from fotosevidencia where IdCita=0")or die(mysql_error());
+					    $contador = 1; 
+						while ($f=mysql_fetch_array($re)) {
+                	    $variable =  $f['Publicar'];
+	                    $variabl= "visible";
+     				    if ($variable == $variabl):  ?>
+					     <li><img src="<?php echo $f['Path'];?>" alt="foto" title="foto <?php echo ($contador);?>" id="wows1_0"/></li>
+			            <?php $contador+=1; else: ?><?php endif; ?>
+						<?php
+						} 
+					?>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+    <div id="clientes">     <pre>
+
+            <h1>                    Delineados Magally                      </h1>
+		Estimados Clientes: <br><br>
+      La Dermopigmetaci&#243;n o micropigmentacion es un procedimiento utilizado desde la antig&#252;edad a trav&#233;s de la cual se colocaban part&#237;culas de diversos 
+      materiales debajo de la superficie cut&oacutenea con el fin de obtener dibujos &#34;permanentes&#34; y en d&iacutea La micropigmentacion es un procedimiento de implante de 
+      pigmentos en la dermis. Con efectos de afinaci&#243;n de rasgos est&eacuteticos. Es un microtatuaje de belleza. Se sugiere generalmente para: 
+      La correcci&oacuten, simetr&#237;a, armon&iacutea de ojos, cejas y labios. Seg&uacuten la personalidad del cliente. 
+
+	<h3>                Otras aplicaciones de la Micropigmentacion son:</h3>
+
+	<h4>          CEJAS: </h4>
+      (compacto, sombreado o simulando vellos)con un efecto natural al rellenar las cejas y cejas escasas.
+
+	<h4>          OJOS:  </h4>
+      Superior e inferior (entre pesta&ntilde;as, delineado, &aacuterea conjuntiva o l&iacuteneas bicolor o iluminaci&oacuten, sombreado).
+
+	<h4>          LABIOS: </h4>
+      Ensancharlos o disminuirlos corregirlos o acortarlos (perfilado y relleno).
+      p&oacutemulos, &aacuterea de rubor, lunares coquetos y Param&eacutedico (simulaci&oacuten areola, pez&oacuten perfilado en labio leporino, camuflaje de cicatrices).
+      Que se efect&eucutea con un aparato electromec&aacutenico llamado dem&oacutegrafo o con un inductor manual. Se emplean agujas esterilizadas y accesorios desechables 
+      y de un solo uso que son abiertos en presencia del cliente. El efecto del implante de pigmento dentro de la piel ser&aacute m&aacutes de 2 a&ntilde;os, a cuyo t&eacutermino, 
+      el usuario decide si deja que este  pierda intensidad hasta eliminarse por el paso del tiempo o tomar la opci&aacuten de renovarlo con un retoque en una nueva sesi&oacuten. 
+      Para realizarla utilizamos pigmentos hipoalerg&eacutenicos de origen vegetal y mineral. que cumplen con estrictas normas industriales FDA Y CAMIEF as&iacute como,
+      gubernamentales en su elaboraci&oacuten y distribuci&oacuten al mercado como son: Calidad de las materias primas, tama&ntilde;o de la mol&eacutecula control de inocuidad, insolubilidad, 
+      inercia, fecha de elaboraci&oacute;n, de caducidad y datos del fabricante. Entre sus grandes cualidades destaca el no contener plomo, carb&oacute;n ni mercurio. 
+               </pre>
+     </div>
+</main>    
+</body>
+        <script type="text/javascript" src="engine1/wowslider.js"></script>
+	<script type="text/javascript" src="engine1/script.js"></script>
+</html>
+
+
+
