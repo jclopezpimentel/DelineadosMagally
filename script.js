@@ -10,5 +10,30 @@ $('#cssmenu').prepend('<div id="menu-button">Menu</div>');
 			menu.addClass('open');
 		}
 	});
+
+
+	$(".titulo").click(function() {		
+		//$("div.info").css("height:50%");
+		var father=$(this).parent();
+/*		if (father.hasClass("subapartado")){
+			father.css("height:50%");
+			alert("Si existe");
+		}else{
+			alert("No existe");
+		}
+*/
+
+		var info=father.children(".info");		
+
+		info.css("height","50%");
+		
 });
+
+});
+
+
+
 } )( jQuery );
+
+
+

@@ -93,7 +93,7 @@
 		<div class="subapartado">
 			
 			<div class="titulo">
-				<p class="titulo"><a name="tema3"> Ventajas en un delineado de cejas</p>
+				<p class="titulo"><a name="tema3"> Ventajas en un delineado de cejas</a></p>
 			</div>
 
 			<div class="info">

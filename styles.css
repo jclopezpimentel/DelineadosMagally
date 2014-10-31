@@ -345,38 +345,44 @@
 	width:100%;
 	min-height:100%;
 	background-color: green;
+/*	
 	-webkit-transiton: height 0.2s;
-  -moz-transition: height 0.2s;
-   cursor: pointer;       
-  border-top: 2px solid red;
+  	-moz-transition: height 0.2s;
+  	-o-transition: height 15.5s;
+*/    cursor: pointer;       
+  	border-top: 2px solid red;
   
   
 }
+
+
 
 .titulo{
 	width:100%;
 	height:10%;
 	background-color: #CB2247;
 	overflow: hidden;     
-  cursor: pointer;  
+  	cursor: pointer;  
 }
+
 
 p.titulo{
 	margin:5%;
 	color: white;  
-  cursor: pointer;      
+  	cursor: pointer;      
 }
 
 .info{
 	width:100%;
-  cursor: pointer; 
+  	cursor: pointer; 
 	height:0px;
 	background-color: #F1FCDD;
 	overflow: hidden;
 	border-left-color:2px solid blue;
-  -webkit-transition: height 15.5s; 
-   -moz-transition: height 15.5s;                  
-     overflow-x:scroll;
+/*  	-webkit-transition: height 15.5s; 
+  	-moz-transition: height 15.5s;
+  	-o-transition: height 15.5s; */                 
+    overflow-x:scroll;
 }
 
 p.info{
@@ -385,11 +391,16 @@ p.info{
 	color:#4f4f4f;
 }
 
-.subapartado:active div.info{
- 	height:50%;
 
+.subapartado:target div.info{
+ 	height:50%;
 }
 
+/*
+.subapartado:active div.info{
+ 	height:50%;
+}
+*/
 
 
 

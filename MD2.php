@@ -3,14 +3,15 @@
    
    <div id="body">
 
-		<div class="subapartado">
+		<div class="subapartado" >
 			
-			<div class="titulo">
+			<div class="titulo"  >
 				<p class="titulo">Delineados permantes</p>
 			</div>
 
 			<div class="info">
-				<p class="info"><pre>
+				<p class="info">
+				<pre>
                 
                 
           •	Ceja compacta
@@ -19,11 +20,11 @@
                         
           •	Ceja pelo a pelo
                         
-          •	Linea negra en parpado superior e inferior
+          •	Linea negra en párpado superior e inferior
                         
           •	Relleno entre pestañas superior e inferior (efecto pestaña)
                         
-          •       Relleno en área conjuntiva en ojos superior e inferior
+          • Relleno en área conjuntiva en ojos superior e inferior
                         
           •	Iluminación o linea french
                         

@@ -25,7 +25,7 @@ $pagina = basename($_SERVER['QUERY_STRING']);
    <script type="text/javascript" src="engine1/wowslider.js"></script>
 	<script type="text/javascript" src="engine1/script.js"></script>      
    <script type="text/javascript" src="engine1/javascript.js"></script>
-   <script type="text/javascript" src="JavaScript/funcionn.js"></script>
+   <!--<script type="text/javascript" src="JavaScript/funcionn.js"></script>-->
    
 
 
