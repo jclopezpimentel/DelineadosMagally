@@ -1,7 +1,7 @@
 <?php
 
 $resultado=$_POST['calendario'];
-include "conexion.php";
+include "../Admin/conexion.php";
 $rs=mysql_query("select mostrar from calendario",$con);
 $datos=mysql_fetch_array($rs);
 if($datos['mostrar']==1){

@@ -4,7 +4,7 @@
 <div id="wowslider-container1">
 				<div class="ws_images"><ul>   
 				    <?php
-						include 'conexion.php';
+						include 'Admin/conexion.php';
 						$re=mysql_query("select * from fotosevidencia where Galeria=1 order by Posicion")or die(mysql_error());
 					   //  $re=mysql_query("select * from fotosevidencia where IdCita<>0 order by Posicion")or die(mysql_error());
 					   

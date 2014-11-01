@@ -6,7 +6,7 @@ echo "
     <div id="wowslider-container1">
 				<div class="ws_images"><ul>   
 				    <?php
-						include 'conexion.php';
+						include 'Admin/conexion.php';
 						//$re=mysql_query("select * from fotosevidencia where Galeria=2")or die(mysql_error());
 					      $re=mysql_query("select * from fotosevidencia where IdCita<>0 order by Posicion")or die(mysql_error());
 					   
@@ -35,7 +35,7 @@ echo "
             
 		          <div id='f'>
 	<?php
-		include 'conexion.php';
+		//include 'conexion.php';
 		//$re=mysql_query("select * from fotosevidencia where Galeria=1")or die(mysql_error());
 		  $re=mysql_query("select * from fotosevidencia where IdCita<>0 and Publicar='visible' order by Posicion")or die(mysql_error());
 					   

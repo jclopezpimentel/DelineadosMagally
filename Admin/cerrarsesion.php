@@ -1,5 +1,5 @@
 <?php
-	require_once("sesion.class.php");
+	require_once("includes/sesion.class.php");
 	
 	$sesion = new sesion();
 	$usuario = $sesion->get("usuario");	
@@ -9,7 +9,7 @@
 	}
 	else 
 	{
-		$usuario = $sesion->get("usuario");	
+		//$usuario = $sesion->get("usuario");	
 		$sesion->termina_sesion();	
 		header("location: index.php");
 	}

@@ -1,11 +1,12 @@
 <?php 
-	require_once("sesion.class.php");
+	require_once("includes/sesion.class.php");
 	
 	$sesion = new sesion();
 	$usuario = $sesion->get("usuario");
 	
 	if( $usuario == false )
-	{	
+	{						echo "Entre";
+
 		header("Location: index.php");		
 	}
 	else 
@@ -20,7 +21,7 @@
 	
 ?>
 <div id="bien">
-Bienvenido:  <?php echo $sesion->get("usuario"); ?> <a href="cerrarsesion.php"> Cerrar Sesion </a> <a href="http://www.delineadosmagally.com.mx/Admin/home.php?p=Contra"> Cambiar contrase&ntilde;a </a>
+Bienvenido:  <?php echo $sesion->get("usuario"); ?> <a href="cerrarsesion.php"> Cerrar Sesion </a> <a href="home.php?p=Contra"> Cambiar contrase&ntilde;a </a>
 </div>
 <!doctype html>
 <html lang="es">
@@ -65,7 +66,7 @@ Bienvenido:  <?php echo $sesion->get("usuario"); ?> <a href="cerrarsesion.php"> 
     if(file_exists($pagina.'.php')){
 	       include($pagina.'.php');
 	 } else {
-	       echo('¡Esa página no existe!');
+	       echo('Esa pÃ¡gina no existe!');
 	 } 
 	?>
 </div>	

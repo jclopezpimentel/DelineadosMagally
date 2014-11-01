@@ -1,18 +1,16 @@
 <?php
-	require_once("includes/sesion.class.php");
 
-	$sesion = new sesion();
+
 	
-	if( isset($_POST["iniciar"]) )
-	{
-		
+	if( isset($_POST["usuario"]) )
+	{		
 		$usuario = $_POST["usuario"];
 		$password = $_POST["contrasenia"];
-		
 		if(validarUsuario($usuario,$password) == true)
-		{			
+		{					
+			require_once("includes/sesion.class.php");
+			$sesion = new sesion();
 			$sesion->set("usuario",$usuario);
-			
 			header("location: home.php");
 		}
 		else 
@@ -21,24 +19,30 @@
 		}
 	}
 	
+
 	function validarUsuario($usuario, $password)
 	{
-		$conexion = new mysqli("localhost","root","root","delinead_magally");
-		$consulta = "select Contrasena from usuarios where Usuario = '$usuario';";
-		
-		$result = $conexion->query($consulta);
-		
-		if($result->num_rows > 0)
-		{
-			$fila = $result->fetch_assoc();
-			if( strcmp($password,$fila["Contrasena"]) == 0 )
-				return true;						
-			else					
+		include 'conexion.php';
+	    $consulta = "select Contrasena from usuarios where Usuario = '$usuario'";
+		$result = mysql_query($consulta);
+		//$result = $con->query($consulta);
+		if($result){
+			//$num_rows = mysql_num_rows($result);
+			
+			if($row = mysql_fetch_assoc($result)){
+				//$fila = $result->fetch_assoc();			
+				if( strcmp($password,$row['Contrasena']) == 0 ){
+					return true;						
+				}else					
+					return false;
+			}else{
+				return false;
+			}	
+		}else{
 				return false;
 		}
-		else
-				return false;
 	}
+
 
 ?>
 <html>

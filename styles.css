@@ -392,10 +392,6 @@ p.info{
 }
 
 
-.subapartado:target div.info{
- 	height:50%;
-}
-
 /*
 .subapartado:active div.info{
  	height:50%;

@@ -3,7 +3,7 @@ $aviso = "";
 // check form  
 if ($_POST['email'] != "") {
 	// email de destino
-	$email = "jmeedd@gmail.com";
+	$email = "magallydelineados@gmail.com";
 	
 	// asunto del email
 	$subject = $_POST['asunto'];
