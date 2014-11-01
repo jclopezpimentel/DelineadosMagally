@@ -23,7 +23,7 @@
 	
 	function validarUsuario($usuario, $password)
 	{
-		$conexion = new mysqli("localhost","delinead_magally","Magally2014","delinead_magally");
+		$conexion = new mysqli("localhost","root","root","delinead_magally");
 		$consulta = "select Contrasena from usuarios where Usuario = '$usuario';";
 		
 		$result = $conexion->query($consulta);
