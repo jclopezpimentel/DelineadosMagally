@@ -25,7 +25,7 @@
 
 <?php
 
-include "includes/conexion.php";
+include "conexion.php";
 $rs=mysql_query("select IdCliente,Nombre,ApellidoPaterno,ApellidoMaterno from clientes where Eliminado<>1 order by Nombre,ApellidoPaterno,ApellidoMaterno",$con);
 if($rs!=NULL){
     echo "<ul id='lista'>";

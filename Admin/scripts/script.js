@@ -60,7 +60,7 @@ function validar(e) {
 //DANIRA
 
 function generador(cita){    
-	window.open("http://www.delineadosmagally.com.mx/Admin/includes/generador.php?p="+cita);  
+	window.open("includes/generador.php?p="+cita);  
 }
 function eliminar(cliente){
    var resultado= confirm("Confirma la eliminacion del usuario?")
@@ -109,11 +109,11 @@ function servicios(componente,servicio){
 }
 
 function citaNueva(cliente){  
-  window.location="http://www.delineadosmagally.com.mx/Admin/home.php?p=MD12&id="+cliente;  
+  window.location="home.php?p=MD12&id="+cliente;  
 }
 
 function mostrarHistoria(cita){   
-     window.location="http://www.delineadosmagally.com.mx/Admin/home.php?p=MD8&id="+cita;
+     window.location="home.php?p=MD8&id="+cita;
 }
 
 function cambiarColor(id){
@@ -151,9 +151,8 @@ var contenedor = document.getElementById("contenido2");
     }
     
 function regresar(cliente){
-    window.load("p=MD10")
-    
-    window.open("http://www.delineadosmagally.com.mx/Admin/home.php?p=MD10");
+    //window.load("p=MD10");
+    window.open("home.php?p=MD10");
     mostrarCitas(cliente);
 }
     

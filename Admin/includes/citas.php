@@ -2,7 +2,7 @@
 
 $cliente=$_POST['IdCliente'];
 $nombre="";
-include "conexion.php";
+include "../conexion.php";
 $rs=mysql_query("select Nombre,ApellidoPaterno,ApellidoMaterno from clientes where IdCliente =$cliente ",$con);
 $clientes=mysql_fetch_array($rs);
 $nombre=urldecode($clientes['Nombre'])." ".urldecode($clientes['ApellidoPaterno'])." ".urldecode($clientes['ApellidoMaterno']);

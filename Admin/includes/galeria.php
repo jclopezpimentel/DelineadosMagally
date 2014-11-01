@@ -1,7 +1,7 @@
 
 <?php
 echo "<div class='container'>";
-include "conexion.php";
+include "../conexion.php";
 $rs=mysql_query("select Path,Descripcion from fotosevidencia where IdCita=$cita",$con);
 if($rs!=NULL){
       while($fotos = mysql_fetch_array($rs)){

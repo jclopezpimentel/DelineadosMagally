@@ -1,6 +1,6 @@
 
 <?php
-include "conexion.php";
+include "../conexion.php";
 $rs = mysql_query("select * from caracteristicasformula where IdCita=$cita",$con);
   $datos=mysql_fetch_array($rs);
 	$DesCabelloPiel=urldecode($datos['DesCabelloPiel']);

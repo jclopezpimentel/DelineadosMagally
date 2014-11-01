@@ -1,5 +1,5 @@
 <?php
-include("conexion.php");
+include("../conexion.php");
 try
 {
 $con = mysql_connect($host,$user,$pw)or die("Problema al conectar");

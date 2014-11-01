@@ -33,7 +33,7 @@
             }, 1000);
 		setTimeout(function(){
                     $('.container').fadeOut();
-					location.href="http://www.delineadosmagally.com.mx/Admin/home.php";
+					location.href="home.php";
                 },1000);
 		
           }else{

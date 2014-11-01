@@ -5,8 +5,7 @@
 	$usuario = $sesion->get("usuario");
 	
 	if( $usuario == false )
-	{						echo "Entre";
-
+	{
 		header("Location: index.php");		
 	}
 	else 
@@ -73,7 +72,7 @@ Bienvenido:  <?php echo $sesion->get("usuario"); ?> <a href="cerrarsesion.php"> 
 </div>
  
 <?php 
-	include('pie.php');
+	//include('pie.php'); Quitaremos el pie de página a petición de Magally
     
 ?>	
 </div>

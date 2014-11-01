@@ -1,7 +1,7 @@
 
 
 <?php
-include "conexion.php";
+include "../conexion.php";
 
 $rs = mysql_query("select * from citas inner join clientes on citas.IdCliente=clientes.IdCliente inner join historialcliente his on his.IdCita=citas.IdCita where citas.IdCita=$cita",$con); 
 $fetch = mysql_fetch_array($rs);                  

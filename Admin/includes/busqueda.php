@@ -14,7 +14,7 @@ class ElementoAutocompletar {
 //recibo el dato que deseo buscar sugerencias
 $datoBuscar = $_POST["term"];
 //defino un array con varios elementos objetos de la clase anterior
-include "conexion.php";
+include "../conexion.php";
 $rs=mysql_query("select IdCliente,Nombre,ApellidoPaterno,ApellidoMaterno from clientes where Nombre like '%" . $datoBuscar . "%' ",$con);
 $array=array();
 $texto="";

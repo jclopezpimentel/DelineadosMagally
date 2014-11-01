@@ -2,7 +2,7 @@
 
 
 $para = $_POST['correo'];
-$titulo = utf8_encode("cancelación de cita Delineados Magally");
+$titulo = utf8_encode("cancelaci—n de cita Delineados Magally");
 $mensaje = $_POST['nombre'].' con cita: '.$_POST['fecha']."  ".$_POST['inicio'].",".$_POST['comentarios']; //Mensaje de 2 lineas
 $cabeceras = 'From: webmaster1@midominio.com' . "\r\n" . //La direccion de correo desde donde supuestamente se envió
     'Reply-To: webmaster2@midominio.com' . "\r\n" . //La direccion de correo a donde se responderá (cuando el recepto haga click en RESPONDER)
