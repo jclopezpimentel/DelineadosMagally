@@ -16,7 +16,7 @@
 <div id="fga">  <center> 
               
                            <h1>Agregar imagen</h1>  <br>
- <form action="http://www.delineadosmagally.com.mx/Admin/home.php?p=MD6" method="post" enctype="multipart/form-data">
+ <form action="home.php?p=MD6" method="post" enctype="multipart/form-data">
   <input name="archivo" type="file" size="35" />      <br><br>
   
   <input name="visible" type="checkbox"> visible   <br><br>
@@ -174,7 +174,7 @@ if ($_POST["action"] == "upload") {
 			<center>
 				<img src="<?php echo $f['Path'];?>">      <br>
 				<span><?php echo $f['Publicar'];?></span><br><!--  -->
-				<a href="http://www.delineadosmagally.com.mx/Admin/estado.php?id=<?php  echo $f['IdFotos'];?>">Detalles</a>
+				<a href="estado.php?id=<?php  echo $f['IdFotos'];?>">Detalles</a>
 			</center>
 		</div>
 	<?php

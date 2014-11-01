@@ -27,7 +27,7 @@
       }
 	?>        
                    
-<form name="formupdate" action="http://www.delineadosmagally.com.mx/Admin/home.php?p=MD6" method="POST">  
+<form name="formupdate" action="home.php?p=MD6" method="POST">  
        <input type="text" name="NID" value="<?php echo($ID); ?>" style = "visibility: hidden;"> <br>
       
         <?php
@@ -93,7 +93,7 @@ while ($f=mysql_fetch_array($rsre)) {
  
                  
                  
-<form name="formupdatee" action="http://www.delineadosmagally.com.mx/Admin/home.php?p=MD6" method="POST" >
+<form name="formupdatee" action="home.php?p=MD6" method="POST" >
   
  <input type="text" name="NIID" value="<?php echo($ID); ?>" style = "visibility: hidden;"> <br>  
   <input name="boton2"  type="image" style = " position:absolute; left:38%;top:95%; height=6%; width:6%" src="Images/eliminar.png">
